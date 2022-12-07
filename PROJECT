@@ -1,0 +1,16 @@
+domain: attgua.dev
+layout:
+- go.kubebuilder.io/v3
+projectName: gooperator
+repo: kubecon
+resources:
+- api:
+    crdVersion: v1
+    namespaced: true
+  controller: true
+  domain: attgua.dev
+  group: webapp
+  kind: GuestBook
+  path: kubecon/api/v1
+  version: v1
+version: "3"
